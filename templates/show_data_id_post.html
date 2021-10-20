@@ -1,0 +1,15 @@
+{% extends 'Base.html' %}
+{% block title %}
+<title>Переводчик</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-white">Поиск слова</h1>
+{% endblock %}
+
+{% block body %}
+<form method="post">
+    <input type="number" class="form-control" name="data_id"><h5 class="text-white" >Введите ID слова, для просмотра полной информации о нем</h5><br>
+    <button class="btn btn-success" type="submit">Найти слово</button>
+</form>
+{% endblock %}

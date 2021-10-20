@@ -1,0 +1,14 @@
+{% extends 'Base.html' %}
+{% block title %}
+<title>Переводчик</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-white">Перевод данного слова имеется в нашей базе данных</h1>
+{% endblock %}
+
+{% block body %}
+{% for element in data %}
+<h1 class="text-white">Перевод: {{ element.translate }}</h1>
+{% endfor %}
+{% endblock %}

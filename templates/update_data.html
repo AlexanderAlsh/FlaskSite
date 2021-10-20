@@ -1,0 +1,16 @@
+{% extends 'Base.html' %}
+{% block title %}
+<title>Переводчик</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-white">Добавление слова</h1>
+{% endblock %}
+
+{% block body %}
+<form method="post">
+    <input type="text" class="form-control" name="word1"><h5 class="text-white" >Введите слово, перевод которого Вы хотите обновить</h5><br>
+    <input type="text" class="form-control" name="word2"><h5 class="text-white" >Введите новый перевод</h5><br>
+    <button class="btn btn-success" type="submit">Обновить перевод</button>
+</form>
+{% endblock %}

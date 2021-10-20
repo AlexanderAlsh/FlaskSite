@@ -1,0 +1,15 @@
+{% extends 'Base.html' %}
+{% block title %}
+<title>Переводчик</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-white">Удаление слова</h1>
+{% endblock %}
+
+{% block body %}
+<form method="post">
+    <input type="text" class="form-control" name="word1"><h1 class="text-white">Введите слово, данные которого вы хотите удалить</h1><br>
+    <button class="btn btn-success" type="submit"><h6 class="text-white">Удалить перевод</h6></button>
+</form>
+{% endblock %}
